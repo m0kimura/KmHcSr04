@@ -1,5 +1,4 @@
-KmDht11     KEYWORD1
+KmHcSr04     KEYWORD1
 
-get         KEYWORD2
-Humidity    KEYWORD2
-Temperature KEYWORD2
+observe     KEYWORD2
+distance    KEYWORD2
