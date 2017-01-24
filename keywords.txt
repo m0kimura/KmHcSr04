@@ -1,0 +1,5 @@
+KmDht11     KEYWORD1
+
+get         KEYWORD2
+Humidity    KEYWORD2
+Temperature KEYWORD2
