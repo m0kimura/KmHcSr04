@@ -1,4 +1,8 @@
-KmHcSr04     KEYWORD1
+KmHcSr04    KEYWORD1
 
 observe     KEYWORD2
 distance    KEYWORD2
+sense       KEYWORD2
+Speed       KEYWORD2
+Range       KEYWORD2
+

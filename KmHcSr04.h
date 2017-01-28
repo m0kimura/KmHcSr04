@@ -11,6 +11,9 @@ class KmHcSr04{
     void begin(int debug);
     int observe();
     float distance();
+    bool sense();
+    int Range;
+    int Speed;
     
   private:
     int       PinTrig;

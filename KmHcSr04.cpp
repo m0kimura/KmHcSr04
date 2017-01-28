@@ -3,7 +3,7 @@
 #include "KmHcSr04.h"
 
 KmHcSr04::KmHcSr04(int trig, int echo){
-  PinTrig=trig; PinEcho=echo;
+  PinTrig=trig; PinEcho=echo; Range=200; Speed=340;
 }
 
 void KmHcSr04::begin(int debug){
@@ -30,9 +30,14 @@ float KmHcSr04::distance(){
   float rc;
   if(d>0){
     rc=d/2;
-    rc=rc*340*100/1000000; // ultrasonic speed is 340m/s = 34000cm/s = 0.034cm/us
+    rc=rc*Speed*100/1000000; // ultrasonic speed is 340m/s = 34000cm/s = 0.034cm/us
     if(Debug){Serial.println("Distance:"+String(rc)+"cm");}
     return rc;
   }
   return 0;
+}
+
+bool KmHcSr04::sense(){
+  if(KmHcSr04::distance()>Range){return false;}
+  return true;
 }
